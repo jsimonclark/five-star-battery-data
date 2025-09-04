@@ -1,0 +1,11 @@
+pandas
+ipykernel
+matplotlib
+pyarrow
+tables
+dotenv
+requests
+rdflib
+EMMOntoPy
+fsspec
+aiohttp
