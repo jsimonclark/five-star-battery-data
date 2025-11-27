@@ -1,0 +1,853 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>★★★★★ Five-Star Battery Data &#8212; BattInfo  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'star-5/star-5-notebook';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">BattInfo  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-1/star-1.html">
+                        Star-One
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star-Two
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star-Three
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-4/star-4.html">
+                        Star-Four
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="star-5.html">
+                        Star-Five
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-1/star-1.html">
+                        Star-One
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star-Two
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star-Three
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-4/star-4.html">
+                        Star-Four
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="star-5.html">
+                        Star-Five
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">★★★★★ Five-Star Battery Data</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="★★★★★-Five-Star-Battery-Data">
+<h1>★★★★★ Five-Star Battery Data<a class="headerlink" href="#★★★★★-Five-Star-Battery-Data" title="Permalink to this heading">#</a></h1>
+<p>In this notebook, we demonstrate how to complete the Five-Star Battery Data journey by linking a structured battery dataset to <strong>external knowledge sources</strong>. This reflects the goal of star 5: <strong>linked data</strong>.</p>
+<p>We will:</p>
+<ul class="simple">
+<li><p>Load ontology-annotated metadata from Zenodo</p></li>
+<li><p>Parse it using RDF tools</p></li>
+<li><p>Extract identifiers for materials used in the test object</p></li>
+<li><p>Query Wikidata to retrieve additional information</p></li>
+</ul>
+<hr class="docutils" />
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import requests
+from time import sleep
+from IPython.display import display, Image, Markdown
+from rdflib import Graph
+from rdflib.namespace import RDF
+from ontopy import get_ontology
+import pandas as pd
+<br/></pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<section id="Loading-JSON-LD-Metadata-into-an-RDF-Graph">
+<h2>Loading JSON-LD Metadata into an RDF Graph<a class="headerlink" href="#Loading-JSON-LD-Metadata-into-an-RDF-Graph" title="Permalink to this heading">#</a></h2>
+<p>This code block performs the task of retrieving and parsing structured metadata that is encoded in JSON-LD (JavaScript Object Notation for Linked Data). The metadata file describes a battery dataset using RDF (Resource Description Framework) and vocabulary terms from battery-specific ontologies.</p>
+<section id="Step-by-step-explanation:">
+<h3>Step-by-step explanation:<a class="headerlink" href="#Step-by-step-explanation:" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>The variable <code class="docutils literal notranslate"><span class="pre">metadata_url</span></code> is assigned the URL of a JSON-LD file hosted on Zenodo.</p></li>
+<li><p>An empty RDF graph is created using <code class="docutils literal notranslate"><span class="pre">rdflib.Graph()</span></code>. This graph is capable of storing triples in the form of subject–predicate–object.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">g.parse(...)</span></code> function loads and parses the JSON-LD file directly from the specified URL into the RDF graph. The <code class="docutils literal notranslate"><span class="pre">format=&quot;json-ld&quot;</span></code> argument explicitly informs the parser that the content is JSON-LD.</p></li>
+<li><p>After parsing, the code checks the length of the graph.</p>
+<ul class="simple">
+<li><p>If the graph contains one or more RDF triples, it prints a success message showing the total number of triples loaded.</p></li>
+<li><p>If the graph is empty, it prints a warning message.</p></li>
+</ul>
+</li>
+</ol>
+<p>This RDF graph is essential for subsequent semantic queries (using SPARQL), which allow us to locate and extract information such as dataset distributions, data schemas, and semantic annotations. The RDF graph represents the structured metadata in a format that is both machine-readable and semantically meaningful.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>metadata_url = &quot;https://zenodo.org/records/15553919/files/metadata.jsonld&quot;
+
+# Create an RDF graph
+g = Graph()
+
+# Parse local JSON-LD file
+g.parse(metadata_url, format=&quot;json-ld&quot;)
+
+# Print how many triples were loaded
+if len(g) &gt; 0:
+    print(f&quot;✅ Loaded {len(g)} triples.&quot;)
+else:
+    print(&quot;⚠️ No triples were loaded from the file.&quot;)
+<br/><br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+✅ Loaded 455 triples.
+</pre></div></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="Loading-the-Battery-Ontology-into-Memory-and-Parsing-it-into-the-RDF-Graph">
+<h2>Loading the Battery Ontology into Memory and Parsing it into the RDF Graph<a class="headerlink" href="#Loading-the-Battery-Ontology-into-Memory-and-Parsing-it-into-the-RDF-Graph" title="Permalink to this heading">#</a></h2>
+<p>This code block loads the battery ontology into two parallel representations: one as a Python-accessible object model using <code class="docutils literal notranslate"><span class="pre">EMMOntoPy</span></code>, and one as RDF triples into the existing <code class="docutils literal notranslate"><span class="pre">rdflib</span></code> graph.</p>
+<ol class="arabic simple">
+<li><p>The variable <code class="docutils literal notranslate"><span class="pre">battinfo_url</span></code> is assigned the URL of the inferred version of the Battery Ontology. This ontology is hosted at a persistent identifier managed by w3id.org and contains semantic definitions for battery-related concepts.</p></li>
+<li><p>The line <code class="docutils literal notranslate"><span class="pre">battinfo</span> <span class="pre">=</span> <span class="pre">get_ontology(battinfo_url).load()</span></code> uses the <code class="docutils literal notranslate"><span class="pre">EMMOntoPy</span></code> interface to load the ontology into a structured Python object model. This allows programmatic access to ontology classes, properties, and relationships using methods like <code class="docutils literal notranslate"><span class="pre">.classes()</span></code>, <code class="docutils literal notranslate"><span class="pre">.get_by_label()</span></code>, or <code class="docutils literal notranslate"><span class="pre">.search()</span></code>.</p></li>
+<li><p>Simultaneously, the same ontology file is parsed into the RDF graph <code class="docutils literal notranslate"><span class="pre">g</span></code> using <code class="docutils literal notranslate"><span class="pre">g.parse(...)</span></code> with the format specified as <code class="docutils literal notranslate"><span class="pre">&quot;turtle&quot;</span></code>. This ensures that the semantic content of the ontology is available for SPARQL queries in the same graph that contains the dataset metadata.</p></li>
+<li><p>After parsing, the graph is inspected to determine whether any triples were successfully added.</p>
+<ul class="simple">
+<li><p>If the graph contains one or more RDF triples, it prints a success message indicating the total number of triples.</p></li>
+<li><p>If no triples were added, it prints a warning message indicating potential failure.</p></li>
+</ul>
+</li>
+</ol>
+<p>This dual loading approach (into both <code class="docutils literal notranslate"><span class="pre">EMMOntoPy</span></code> and <code class="docutils literal notranslate"><span class="pre">rdflib.Graph</span></code>) provides flexible access to the ontology: human-readable and programmatic via Python classes, and queryable via SPARQL in the RDF graph.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>battinfo_url = &quot;https://w3id.org/emmo/domain/battery/inferred&quot;
+
+# Loading from web
+battinfo = get_ontology(battinfo_url).load()
+g.parse(battinfo_url, format=&quot;turtle&quot;)
+
+# Print how many triples were loaded
+if len(g) &gt; 0:
+    print(f&quot;✅ Loaded {len(g)} triples.&quot;)
+else:
+    print(&quot;⚠️ No triples were loaded from the file.&quot;)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+✅ Loaded 52269 triples.
+</pre></div></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Querying-the-RDF-Graph-for-Active-Materials-and-Their-Semantic-Annotations">
+<h2>Querying the RDF Graph for Active Materials and Their Semantic Annotations<a class="headerlink" href="#Querying-the-RDF-Graph-for-Active-Materials-and-Their-Semantic-Annotations" title="Permalink to this heading">#</a></h2>
+<p>This code block defines and executes a SPARQL query that retrieves information about the active materials present in a battery dataset, as described by the RDF metadata and associated ontologies.</p>
+<ol class="arabic simple">
+<li><p>A multi-line SPARQL query is defined using a Python f-string, allowing dynamic insertion of property IRIs from the <code class="docutils literal notranslate"><span class="pre">battinfo</span></code> ontology object. The query performs the following:</p>
+<ul class="simple">
+<li><p>It selects three variables: <code class="docutils literal notranslate"><span class="pre">?material</span></code>, <code class="docutils literal notranslate"><span class="pre">?type</span></code>, and <code class="docutils literal notranslate"><span class="pre">?wikidata</span></code>.</p></li>
+<li><p>It matches any triple in the RDF graph where a subject <code class="docutils literal notranslate"><span class="pre">?cell</span></code> has a <code class="docutils literal notranslate"><span class="pre">hasActiveMaterial</span></code> relationship to an object <code class="docutils literal notranslate"><span class="pre">?material</span></code>. The <code class="docutils literal notranslate"><span class="pre">hasActiveMaterial</span></code> property IRI is injected from the ontology model using <code class="docutils literal notranslate"><span class="pre">battinfo.hasActiveMaterial.iri</span></code>.</p></li>
+<li><p>It optionally retrieves the RDF type (<code class="docutils literal notranslate"><span class="pre">rdf:type</span></code>) of each material using <code class="docutils literal notranslate"><span class="pre">OPTIONAL</span> <span class="pre">{</span> <span class="pre">?material</span> <span class="pre">rdf:type</span> <span class="pre">?type</span> <span class="pre">}</span></code>. This ensures the query does not fail if the type is missing.</p></li>
+<li><p>It optionally retrieves a <code class="docutils literal notranslate"><span class="pre">wikidataReference</span></code> IRI associated with the material’s type using <code class="docutils literal notranslate"><span class="pre">OPTIONAL</span> <span class="pre">{</span> <span class="pre">?type</span> <span class="pre">battinfo:wikidataReference</span> <span class="pre">?wikidata</span> <span class="pre">}</span></code>.</p></li>
+</ul>
+</li>
+<li><p>The SPARQL query is executed using <code class="docutils literal notranslate"><span class="pre">g.query(query)</span></code>, where <code class="docutils literal notranslate"><span class="pre">g</span></code> is the RDF graph containing both the dataset metadata and the battery ontology.</p></li>
+<li><p>The results are iterated over and printed to the console. For each row:</p>
+<ul class="simple">
+<li><p>The material IRI is printed.</p></li>
+<li><p>If an RDF type is available, it is shown; otherwise, a placeholder string <code class="docutils literal notranslate"><span class="pre">&quot;(no</span> <span class="pre">rdf:type)&quot;</span></code> is used.</p></li>
+<li><p>If a Wikidata reference is available, it is shown; otherwise, <code class="docutils literal notranslate"><span class="pre">&quot;(no</span> <span class="pre">Wikidata</span> <span class="pre">ID)&quot;</span></code> is printed.</p></li>
+</ul>
+</li>
+</ol>
+<p>This step allows for tracing each active material in the dataset to its corresponding class and external identifier (e.g. Wikidata), enabling interoperability with global knowledge graphs and material databases.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define and run the SPARQL query using the resolved IRI
+query = f&quot;&quot;&quot;
+SELECT DISTINCT ?material ?type ?wikidata
+WHERE {{
+  ?cell &lt;{battinfo.hasActiveMaterial.iri}&gt; ?material .
+  OPTIONAL {{ ?material &lt;{RDF.type}&gt; ?type }}
+  OPTIONAL {{ ?type &lt;{battinfo.wikidataReference.iri}&gt; ?wikidata }}
+}}
+&quot;&quot;&quot;
+
+results = g.query(query)
+
+# Display results
+print(&quot;🔍 Materials assigned via hasActiveMaterial, their types, and Wikidata references:&quot;)
+for row in results:
+    material = row.material
+    typ = row.type if row.type else &quot;(no rdf:type)&quot;
+    qid = row.wikidata if row.wikidata else &quot;(no Wikidata ID)&quot;
+    print(f&quot;- {material} (type: {typ}, Wikidata: {qid})&quot;)
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+🔍 Materials assigned via hasActiveMaterial, their types, and Wikidata references:
+- https://zenodo.org/records/15553919#81867a7d-25e2-437c-8aff-104dc6aa9c45 (type: https://w3id.org/emmo/domain/chemical-substance#substance_4c62d334_a124_40b3_9fd1_fe713d01a6af, Wikidata: https://www.wikidata.org/wiki/Q415891)
+- https://zenodo.org/records/15553919#68ff065e-bf7e-47fa-abde-42b82e8e2d54 (type: https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303, Wikidata: https://www.wikidata.org/wiki/Q5309)
+</pre></div></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Querying-Wikidata-for-Material-Properties-and-Images">
+<h2>Querying Wikidata for Material Properties and Images<a class="headerlink" href="#Querying-Wikidata-for-Material-Properties-and-Images" title="Permalink to this heading">#</a></h2>
+<p>This code block queries the Wikidata SPARQL endpoint to retrieve additional semantic information about materials used in a battery dataset. Specifically, it attempts to extract the following for each material with a known Wikidata reference:</p>
+<ul class="simple">
+<li><p>The human-readable label (English name)</p></li>
+<li><p>The density of the material (<code class="docutils literal notranslate"><span class="pre">wdt:P2054</span></code>)</p></li>
+<li><p>A structural or schematic image (<code class="docutils literal notranslate"><span class="pre">wdt:P8224</span></code>)</p></li>
+<li><p>A general photographic image (<code class="docutils literal notranslate"><span class="pre">wdt:P18</span></code>)</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>The SPARQL endpoint for Wikidata is defined as <code class="docutils literal notranslate"><span class="pre">https://query.wikidata.org/sparql</span></code>.</p></li>
+<li><p>A message is printed to indicate the start of the Wikidata lookup process.</p></li>
+<li><p>The loop iterates over the <code class="docutils literal notranslate"><span class="pre">results</span></code> obtained from a prior SPARQL query against the local RDF graph, where each <code class="docutils literal notranslate"><span class="pre">row</span></code> may contain a <code class="docutils literal notranslate"><span class="pre">wikidata</span></code> URI identifying a material class.</p></li>
+<li><p>For each <code class="docutils literal notranslate"><span class="pre">row</span></code>:</p>
+<ul class="simple">
+<li><p>It checks if a <code class="docutils literal notranslate"><span class="pre">wikidata_uri</span></code> is present. If it is not, the row is skipped.</p></li>
+<li><p>The last segment of the URI (e.g., <code class="docutils literal notranslate"><span class="pre">Q42512</span></code>) is extracted and stored as <code class="docutils literal notranslate"><span class="pre">wikidata_id</span></code>.</p></li>
+</ul>
+</li>
+<li><p>A SPARQL query is constructed to fetch:</p>
+<ul class="simple">
+<li><p>The English label of the Wikidata entity using <code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code> filtered by <code class="docutils literal notranslate"><span class="pre">lang=&quot;en&quot;</span></code>.</p></li>
+<li><p>The density property (<code class="docutils literal notranslate"><span class="pre">wdt:P2054</span></code>) if it exists.</p></li>
+<li><p>A structural or schematic image (<code class="docutils literal notranslate"><span class="pre">wdt:P8224</span></code>) if available.</p></li>
+<li><p>A photographic image (<code class="docutils literal notranslate"><span class="pre">wdt:P18</span></code>) if available.</p></li>
+</ul>
+</li>
+<li><p>The query is sent to the Wikidata endpoint using an HTTP GET request, with the response format specified as JSON.</p></li>
+<li><p>If the HTTP response is successful (<code class="docutils literal notranslate"><span class="pre">status_code</span> <span class="pre">==</span> <span class="pre">200</span></code>):</p>
+<ul class="simple">
+<li><p>The JSON results are parsed.</p></li>
+<li><p>If at least one result is returned:</p>
+<ul>
+<li><p>The material’s label, density, and image URLs (if present) are extracted from the result.</p></li>
+<li><p>The label and density are printed.</p></li>
+<li><p>If image URLs exist:</p>
+<ul>
+<li><p>The images are displayed directly in the notebook using <code class="docutils literal notranslate"><span class="pre">IPython.display.Image</span></code>, each scaled to 300 pixels width.</p></li>
+</ul>
+</li>
+<li><p>If no images are available, a message indicates this.</p></li>
+</ul>
+</li>
+<li><p>If no data is returned for the material, a message is printed indicating the failure.</p></li>
+</ul>
+</li>
+<li><p>If the response is not successful, an error message is printed with the HTTP status code.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">sleep(1)</span></code> call is used to pause for one second between requests. This is done to avoid sending queries too rapidly and overwhelming the public SPARQL endpoint, which could lead to throttling or blocking.</p></li>
+</ol>
+<p>This code enriches local dataset metadata by linking it to publicly maintained knowledge in Wikidata, making the dataset more informative and connected within the global web of data.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Define the SPARQL endpoint for Wikidata
+wikidata_endpoint = &quot;https://query.wikidata.org/sparql&quot;
+
+print(&quot;🔍 Querying Wikidata for material density (P2054) and images (P8224, P18):&quot;)
+
+# Loop through each row of SPARQL query results from your RDF graph
+for row in results:
+    wikidata_uri = row[&quot;wikidata&quot;]
+
+    # Continue only if the material has a valid Wikidata URI
+    if wikidata_uri:
+        # Extract the QID (e.g., &quot;Q42512&quot;) from the full Wikidata URL
+        wikidata_id = str(wikidata_uri).split(&#39;/&#39;)[-1]
+
+        # Define a SPARQL query to fetch:
+        # - the English label (human-readable name)
+        # - the density (P2054)
+        # - a structure image (P8224)
+        # - a general photo image (P18)
+        query = f&quot;&quot;&quot;
+        SELECT ?label ?density ?img1 ?img2 WHERE {{
+          wd:{wikidata_id} rdfs:label ?label .
+          FILTER (lang(?label) = &quot;en&quot;)
+
+          OPTIONAL {{ wd:{wikidata_id} wdt:P2054 ?density . }}
+          OPTIONAL {{ wd:{wikidata_id} wdt:P8224 ?img1 . }}
+          OPTIONAL {{ wd:{wikidata_id} wdt:P18 ?img2 . }}
+        }}
+        &quot;&quot;&quot;
+
+        # Send the query to the Wikidata SPARQL endpoint
+        response = requests.get(wikidata_endpoint, params={&#39;query&#39;: query, &#39;format&#39;: &#39;json&#39;})
+
+        if response.status_code == 200:
+            # Parse the JSON response from Wikidata
+            bindings = response.json().get(&#39;results&#39;, {}).get(&#39;bindings&#39;, [])
+
+            # If results are found for the material
+            if bindings:
+                b = bindings[0]  # Get the first result row
+                label = b[&#39;label&#39;][&#39;value&#39;]  # Material label (e.g., &quot;Graphite&quot;)
+                density = b.get(&#39;density&#39;, {}).get(&#39;value&#39;, &#39;N/A&#39;)  # Density value if present
+                img1 = b.get(&#39;img1&#39;, {}).get(&#39;value&#39;, None)  # Structure image URL
+                img2 = b.get(&#39;img2&#39;, {}).get(&#39;value&#39;, None)  # Photo image URL
+
+                # Print the label and density
+                print(f&quot;\n🧪 {label}&quot;)
+                print(f&quot;  - Density: {density} g/cm³&quot; if density != &#39;N/A&#39; else &quot;  - Density: ❌ not available&quot;)
+
+                # Display structure image (chemical diagram or schematic)
+                if img1:
+                    print(f&quot;  - Structure image (P8224):&quot;)
+                    display(Image(url=img1, width=300))  # Scaled to 300 px width
+
+                # Display photo image (e.g., macro photograph of the substance)
+                if img2:
+                    print(f&quot;  - Photo image (P18):&quot;)
+                    display(Image(url=img2, width=300))  # Scaled to 300 px width
+
+                # If neither image is available
+                if not img1 and not img2:
+                    print(&quot;  - Images: ❌ none available&quot;)
+            else:
+                print(f&quot;- {wikidata_id}: ❌ no data returned from SPARQL query&quot;)
+        else:
+            print(f&quot;- {wikidata_id}: ❌ SPARQL query failed (HTTP {response.status_code})&quot;)
+
+        # Pause between requests to avoid hitting the endpoint too frequently
+        sleep(1)
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+🔍 Querying Wikidata for material density (P2054) and images (P8224, P18):
+
+🧪 lithium cobalt oxide
+  - Density: 1.68 g/cm³
+  - Structure image (P8224):
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<img src="http://commons.wikimedia.org/wiki/Special:FilePath/Lithium-cobalt-oxide-3D-balls.png" width="300"/></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+🧪 graphite
+  - Density: 2.16 g/cm³
+  - Photo image (P18):
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area rendered_html docutils container">
+<img src="http://commons.wikimedia.org/wiki/Special:FilePath/GraphiteUSGOV.jpg" width="300"/></div>
+</div>
+</section>
+<section id="Summary">
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, you learned how to satisfy the requirements for <strong>5-star battery data</strong> by linking your dataset to external data sources like <strong>Wikidata</strong> and <strong>PubChem</strong>.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Step</p></th>
+<th class="head"><p>What You Did</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Load metadata</p></td>
+<td><p>Parsed JSON-LD/RDFa metadata from a published Zenodo record</p></td>
+</tr>
+<tr class="row-odd"><td><p>Extract materials</p></td>
+<td><p>Identified semantic IRIs for active materials</p></td>
+</tr>
+<tr class="row-even"><td><p>Link externally</p></td>
+<td><p>Queried Wikidata using SPARQL to retrieve additional info</p></td>
+</tr>
+</tbody>
+</table>
+<p>This allows your dataset to become part of a larger <strong>knowledge graph</strong>, enabling automated reasoning, richer search, and future integration with AI agents.</p>
+<hr class="docutils" />
+<p><img alt="EU Flag" class="no-scaled-link" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" width="100" /></p>
+<div class="line-block">
+<div class="line"><strong>This work has received funding from the European Union under the Horizon Europe programme.</strong></div>
+<div class="line">Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the granting authority can be held responsible for them.</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Loading-JSON-LD-Metadata-into-an-RDF-Graph">Loading JSON-LD Metadata into an RDF Graph</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-by-step-explanation:">Step-by-step explanation:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Loading-the-Battery-Ontology-into-Memory-and-Parsing-it-into-the-RDF-Graph">Loading the Battery Ontology into Memory and Parsing it into the RDF Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Querying-the-RDF-Graph-for-Active-Materials-and-Their-Semantic-Annotations">Querying the RDF Graph for Active Materials and Their Semantic Annotations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Querying-Wikidata-for-Material-Properties-and-Images">Querying Wikidata for Material Properties and Images</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/star-5/star-5-notebook.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2021-2024.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
