@@ -47,3 +47,7 @@ Get started below:
    star-4/star-4-notebook
    star-5/star-5-notebook
    summary/summary
+
+Funding acknowledgement
+-----------------------
+This work has received funding from the European Union and the **BATTERY 2030+** initiative under grant agreement No. XXXXXXX. The views and opinions expressed are those of the authors only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
