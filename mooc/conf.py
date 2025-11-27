@@ -159,13 +159,8 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     # Keep the top bar simple and static.
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-links"],
+    "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-button", "navbar-icon-links"],
-    "navbar_links": [
-        {"name": "Introduction", "url": "introduction/introduction.html", "internal": True},
-        {"name": "Discussion", "url": "discussion/discussion.html", "internal": True},
-        {"name": "Quiz", "url": "quiz/quiz.html", "internal": True},
-    ],
     # Sidebar navigation: keep siblings visible and expanded to course depth.
     "navigation_depth": 4,
     "collapse_navigation": False,
