@@ -80,8 +80,7 @@ Get started below:
     You can navigate via the sidebar or explore the chapters above.
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
 
    introduction/introduction
    star-1/star-1-notebook

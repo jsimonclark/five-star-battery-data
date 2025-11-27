@@ -119,24 +119,19 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    # Keep the header clean; rely on the sidebar for navigation.
-    "navbar_center": [],
+    # Clean top bar with just the key links; detailed nav lives in the sidebar.
+    "navbar_start": ["navbar-logo"],
+    "navbar_center": ["navbar-nav"],
+    "navbar_links": [
+        {"name": "The Course", "url": "introduction/introduction.html", "internal": True},
+        {"name": "Discussion", "url": "discussion/discussion.html", "internal": True},
+        {"name": "Quiz", "url": "quiz/quiz.html", "internal": True},
+    ],
     "show_sidebar": True,
     "show_nav_level": 1,
     "show_toc_level": 0,
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/emmo-repo/domain-electrochemistry",
-            "icon": "fab fa-github-square",
-        },
-        {
-            "name": "Ontology Homepage",
-            "url": "https://w3id.org/emmo/domain/electrochemistry",
-            "icon": "fas fa-globe",
-        },
-    ],
-    "search_bar_text": "Search the ontology...",
+    "icon_links": [],
+    "search_bar_text": "Search the course...",
     "show_prev_next": False,
     "footer_start": ["copyright"],
     "footer_center": ["sphinx-version"],
@@ -145,7 +140,7 @@ html_theme_options = {
 }
 
 html_static_path = ["_static"]
-html_title = "Domain Electrochemistry Ontology"
+html_title = "★★★★★ Battery Data"
 
 
 html_sidebars = {
