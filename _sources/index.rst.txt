@@ -21,7 +21,7 @@ Get started below:
         What is Five-Star Data, and why does it matter?
 
     .. grid-item-card::
-        :link: star-1/star-1.html
+        :link: star-1/star-1-notebook.html
         :text-align: center
 
         :octicon:`cloud-upload;1em;sd-text-primary`  One-Star: Open Access
@@ -31,7 +31,7 @@ Get started below:
 .. grid:: 2
 
     .. grid-item-card::
-        :link: star-2/star-2.html
+        :link: star-2/star-2-notebook.html
         :text-align: center
 
         :octicon:`database;1em;sd-text-info`  Two-Star: Structured Data
@@ -39,7 +39,7 @@ Get started below:
         Organize your data so machines (and people) can understand it.
 
     .. grid-item-card::
-        :link: star-3/star-3.html
+        :link: star-3/star-3-notebook.html
         :text-align: center
 
         :octicon:`file-code;1em;sd-text-secondary`  Three-Star: Open Formats
@@ -49,7 +49,7 @@ Get started below:
 .. grid:: 2
 
     .. grid-item-card::
-        :link: star-4/star-4.html
+        :link: star-4/star-4-notebook.html
         :text-align: center
 
         :octicon:`tag;1em;sd-text-warning`  Four-Star: Semantic Metadata
@@ -57,7 +57,7 @@ Get started below:
         Use ontologies to describe your data clearly and consistently.
 
     .. grid-item-card::
-        :link: star-5/star-5.html
+        :link: star-5/star-5-notebook.html
         :text-align: center
 
         :octicon:`link;1em;sd-text-danger`  Five-Star: Linked Data
@@ -84,9 +84,9 @@ Get started below:
    :maxdepth: 2
 
    introduction/introduction
-   star-1/star-1
-   star-2/star-2
-   star-3/star-3
-   star-4/star-4
-   star-5/star-5
+   star-1/star-1-notebook
+   star-2/star-2-notebook
+   star-3/star-3-notebook
+   star-4/star-4-notebook
+   star-5/star-5-notebook
    summary/summary
