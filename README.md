@@ -1,7 +1,7 @@
 # Five-Star Battery Data MOOC
 
 Welcome to the source repository for the **Five-Star Battery Data** MOOC — a self-paced course designed to help researchers, developers, and data stewards make battery data more open, structured, and machine-actionable.
-
+ 
 ## About the Course
 
 Battery data is often underutilized due to poor accessibility, lack of structure, and missing metadata. This course teaches you how to apply modern data practices — inspired by the Semantic Web, FAIR principles, and linked data — to transform raw measurements into reusable research assets.
