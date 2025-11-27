@@ -363,11 +363,11 @@ document.write(`
 </ul>
 <p>This notebook helps you transform messy or proprietary outputs into <strong>clean, standardized tables</strong> that are ready for analysis, publication, and reuse.</p>
 </section>
-</section>
 <hr class="docutils" />
 <section id="Watch">
-<h1>Watch<a class="headerlink" href="#Watch" title="Permalink to this heading">#</a></h1>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/_z6Xtbx8QwM" title="Star 2: Structured Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div><hr class="docutils" />
+<h2>Watch<a class="headerlink" href="#Watch" title="Permalink to this heading">#</a></h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/_z6Xtbx8QwM" title="Star 2: Structured Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div></section>
+<hr class="docutils" />
 <section id="Why-is-this-important?">
 <h2>Why is this important?<a class="headerlink" href="#Why-is-this-important?" title="Permalink to this heading">#</a></h2>
 <p>Raw battery data is often inconsistent or difficult to process, which hinders reuse. By transforming it into a standardized, structured table:</p>
@@ -396,9 +396,8 @@ document.write(`
 <p>This is an essential step toward making your data FAIR and ready for semantic annotation in the next stars.</p>
 <hr class="docutils" />
 </section>
-</section>
 <section id="1.-Read-the-cycler-data-file">
-<h1>1. Read the cycler data file<a class="headerlink" href="#1.-Read-the-cycler-data-file" title="Permalink to this heading">#</a></h1>
+<h2>1. Read the cycler data file<a class="headerlink" href="#1.-Read-the-cycler-data-file" title="Permalink to this heading">#</a></h2>
 <p>In this step, we read the csv data file that has been exported from the cycler into a pandas dataframe and explore its content.</p>
 <blockquote>
 <div><p><strong>ℹ️ Note on file formats</strong></p>
@@ -596,7 +595,7 @@ raw_data.head()
 <p>The raw data contains 34 columns, corresponding to a variety of properties. We will now process it into a community standard format to support broader re-use and interoperability.</p>
 </section>
 <section id="Process-the-data-to-align-with-the-BDF-standard">
-<h1>Process the data to align with the BDF standard<a class="headerlink" href="#Process-the-data-to-align-with-the-BDF-standard" title="Permalink to this heading">#</a></h1>
+<h2>Process the data to align with the BDF standard<a class="headerlink" href="#Process-the-data-to-align-with-the-BDF-standard" title="Permalink to this heading">#</a></h2>
 <p>The <strong>Battery Data Format (BDF)</strong> is an open community standard for structuring battery test data in a clear, consistent, and machine-readable way. It defines how to name fields, express units, and organize data so it can be reliably processed, interpreted, and shared across research and industry. By aligning with BDF, we ensure this dataset is easy to work with using both automated tools and human-readable analysis.</p>
 <p>The raw data contains many quantities that are redundant or can be derived from other fundamental quantities. For BDF conversion, we take only the core subset of measured quantities. It is important to balance the need for archiving complete information with the desire to reduce file size by removing redundant quantities. The BDF defines a minimum set of required quantities, along with a broader set of recommended and optional quantities. It is up to the data curator to determine how much detail
 is necessary.</p>
@@ -703,7 +702,7 @@ bdf_data = pd.DataFrame({
 </div>
 </section>
 <section id="3.-Visualize-the-data">
-<h1>3. Visualize the data<a class="headerlink" href="#3.-Visualize-the-data" title="Permalink to this heading">#</a></h1>
+<h2>3. Visualize the data<a class="headerlink" href="#3.-Visualize-the-data" title="Permalink to this heading">#</a></h2>
 <p>To verify data quality and provide insight into the test process, we visualize key quantities such as voltage, current, and temperature over time.</p>
 <p>These plots help:</p>
 <ul class="simple">
@@ -760,7 +759,7 @@ plt.show()
 </div>
 </section>
 <section id="Serialize-the-cleaned-data-to-a-BDF-compliant-CSV">
-<h1>Serialize the cleaned data to a BDF-compliant CSV<a class="headerlink" href="#Serialize-the-cleaned-data-to-a-BDF-compliant-CSV" title="Permalink to this heading">#</a></h1>
+<h2>Serialize the cleaned data to a BDF-compliant CSV<a class="headerlink" href="#Serialize-the-cleaned-data-to-a-BDF-compliant-CSV" title="Permalink to this heading">#</a></h2>
 <p>The final step is to serialize the structured data into a <strong>CSV file</strong> that complies with the <a class="reference external" href="https://github.com/battery-data-alliance/battery-data-format">BDF</a> standard.</p>
 <p>This means:</p>
 <ul class="simple">
@@ -877,7 +876,7 @@ bdf_data.head()
 </div>
 </section>
 <section id="Summary">
-<h1>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h1>
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
 <p>In this notebook, you learned how to transform raw battery cycler output into a clean, structured, and machine-readable dataset that meets the <strong>2-star criteria</strong> in the Five-Star Battery Data framework.</p>
 <table class="table">
 <thead>
@@ -920,6 +919,7 @@ bdf_data.head()
 <div class="line">Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the granting authority can be held responsible for them.</div>
 </div>
 </section>
+</section>
 
 
                 </article>
@@ -937,23 +937,17 @@ bdf_data.head()
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">★★ 2-Star Battery Data</a><ul class="nav section-nav flex-column">
+    <ul class="nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-does-two-star-mean?">What does two-star mean?</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#Watch">Watch</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Watch">Watch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Why-is-this-important?">Why is this important?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-we-will-do">What we will do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#1.-Read-the-cycler-data-file">1. Read the cycler data file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Process-the-data-to-align-with-the-BDF-standard">Process the data to align with the BDF standard</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#3.-Visualize-the-data">3. Visualize the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Serialize-the-cleaned-data-to-a-BDF-compliant-CSV">Serialize the cleaned data to a BDF-compliant CSV</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#1.-Read-the-cycler-data-file">1. Read the cycler data file</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#Process-the-data-to-align-with-the-BDF-standard">Process the data to align with the BDF standard</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#3.-Visualize-the-data">3. Visualize the data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#Serialize-the-cleaned-data-to-a-BDF-compliant-CSV">Serialize the cleaned data to a BDF-compliant CSV</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a></li>
-</ul>
-
   </nav></div>
 
   <div class="sidebar-secondary-item">
