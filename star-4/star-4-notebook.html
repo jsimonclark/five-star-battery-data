@@ -1,0 +1,848 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>★★★★ Four-Star Battery Data &#8212; Domain Electrochemistry Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'star-4/star-4-notebook';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Star Five: Linked Data" href="../star-5/star-5.html" />
+    <link rel="prev" title="Star Four: Semantic Metadata" href="star-4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the ontology..."
+         aria-label="Search the ontology..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Domain Electrochemistry Ontology</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-1/star-1.html">
+                        Star One: Open Access
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star Two: Structured Data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star Three: Open Formats
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="star-4.html">
+                        Star Four: Semantic Metadata
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-5/star-5.html">
+                        Star Five: Linked Data
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-globe"></i></span>
+            <label class="sr-only">Ontology Homepage</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-1/star-1.html">
+                        Star One: Open Access
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star Two: Structured Data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star Three: Open Formats
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="star-4.html">
+                        Star Four: Semantic Metadata
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-5/star-5.html">
+                        Star Five: Linked Data
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-globe"></i></span>
+            <label class="sr-only">Ontology Homepage</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">★★★★ Four-Star Battery Data</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="star-4.html" class="nav-link">Star Four: Semantic Metadata</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">★★★★ Four-Star Battery Data</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="★★★★-Four-Star-Battery-Data">
+<h1>★★★★ Four-Star Battery Data<a class="headerlink" href="#★★★★-Four-Star-Battery-Data" title="Permalink to this heading">#</a></h1>
+<p>In this notebook, you will learn how to describe a structured battery dataset using <strong>ontology-annotated metadata</strong>, corresponding to <strong>four stars</strong> in the Five-Star Battery Data framework.</p>
+<p>The goal of star four is to provide <strong>explicit metadata</strong> that describes:</p>
+<ul class="simple">
+<li><p>The battery or material under test</p></li>
+<li><p>The test procedure that was carried out</p></li>
+<li><p>The meaning and units of data columns</p></li>
+<li><p>The dataset itself (e.g. title, creator, license)</p></li>
+</ul>
+<p>We do this using <strong>controlled vocabularies</strong> and <strong>semantic formats</strong> like JSON-LD.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
+import json
+</pre></div>
+</div>
+</div>
+<section id="Step-by-Step-Metadata-Construction">
+<h2>Step-by-Step Metadata Construction<a class="headerlink" href="#Step-by-Step-Metadata-Construction" title="Permalink to this heading">#</a></h2>
+<p>To make the process of creating ontology-annotated metadata more understandable, this notebook builds the JSON-LD metadata <strong>incrementally</strong>, reflecting how real-world metadata often evolves—from minimal structure to rich semantic context.</p>
+<hr class="docutils" />
+<section id="Step-1:-Start-with-a-Skeleton">
+<h3>Step 1: Start with a Skeleton<a class="headerlink" href="#Step-1:-Start-with-a-Skeleton" title="Permalink to this heading">#</a></h3>
+<p>We begin by creating a minimal JSON-LD structure with the <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> and top-level type (<code class="docutils literal notranslate"><span class="pre">BatteryTest</span></code>). This gives us a valid but very basic semantic container for describing the battery test.</p>
+<p>At this point, both <code class="docutils literal notranslate"><span class="pre">hasTestObject</span></code> and <code class="docutils literal notranslate"><span class="pre">hasOutput</span></code> are empty placeholders—we’ll fill them in step-by-step.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>metadata = {
+  &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+  &quot;@graph&quot;: [
+      {
+          &quot;@type&quot;: &quot;BatteryTest&quot;,
+          &quot;hasTestObject&quot;: {},
+          &quot;hasOutput&quot;: {}
+      }
+  ]
+}
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Step-2:-Add-Battery-Cell-Description">
+<h3>Step 2: Add Battery Cell Description<a class="headerlink" href="#Step-2:-Add-Battery-Cell-Description" title="Permalink to this heading">#</a></h3>
+<p>We add a basic description of the test object—a <code class="docutils literal notranslate"><span class="pre">LithiumIonPolymerBattery</span></code>—by defining:</p>
+<ul class="simple">
+<li><p>The positive electrode with <code class="docutils literal notranslate"><span class="pre">LithiumCobaltOxide</span></code></p></li>
+<li><p>The negative electrode with <code class="docutils literal notranslate"><span class="pre">Graphite</span></code></p></li>
+<li><p>The electrolyte as a <code class="docutils literal notranslate"><span class="pre">PolymerElectrolyte</span></code></p></li>
+</ul>
+<p>This establishes the core battery structure, using terms from the domain battery ontology.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>metadata = {
+  &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+  &quot;@graph&quot;: [
+      {
+          &quot;@type&quot;: &quot;BatteryTest&quot;,
+          &quot;hasTestObject&quot;: {
+              &quot;@type&quot;: &quot;LithiumIonPolymerBattery&quot;,
+              &quot;hasPositiveElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;LithiumCobaltOxide&quot;
+                  }
+              },
+              &quot;hasNegativeElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;Graphite&quot;
+                  }
+              },
+              &quot;hasElectrolyte&quot;: {
+                  &quot;@type&quot;: &quot;PolymerElectrolyte&quot;
+              }
+          },
+          &quot;hasOutput&quot;: {}
+      }
+  ]
+}
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Step-3:-Add-Key-Properties">
+<h3>Step 3: Add Key Properties<a class="headerlink" href="#Step-3:-Add-Key-Properties" title="Permalink to this heading">#</a></h3>
+<p>We enrich the battery description by adding measurable properties:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">NominalCapacity</span></code> (e.g. 6500 mAh)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NominalVoltage</span></code> (e.g. 3.8 V)</p></li>
+</ul>
+<p>Each property includes a value (<code class="docutils literal notranslate"><span class="pre">hasNumberValue</span></code>) and a formal unit from EMMO (e.g. <code class="docutils literal notranslate"><span class="pre">emmo:MilliAmpereHour</span></code>, <code class="docutils literal notranslate"><span class="pre">emmo:Volt</span></code>). This ensures both <strong>semantic clarity</strong> and <strong>machine interpretability</strong>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>metadata = {
+  &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+  &quot;@graph&quot;: [
+      {
+          &quot;@type&quot;: &quot;BatteryTest&quot;,
+          &quot;hasTestObject&quot;: {
+              &quot;@type&quot;: &quot;LithiumIonPolymerBattery&quot;,
+              &quot;hasPositiveElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;LithiumCobaltOxide&quot;
+                  }
+              },
+              &quot;hasNegativeElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;Graphite&quot;
+                  }
+              },
+              &quot;hasElectrolyte&quot;: {
+                  &quot;@type&quot;: &quot;PolymerElectrolyte&quot;
+              },
+              &quot;hasProperty&quot;: [
+                {
+                    &quot;@type&quot;: &quot;NominalCapacity&quot;,
+                    &quot;hasNumericalPart&quot;: {
+                        &quot;@type&quot;: &quot;RealData&quot;,
+                        &quot;hasNumberValue&quot;: 6500
+                    },
+                    &quot;hasMeasurementUnit&quot;: &quot;emmo:MilliAmpereHour&quot;
+                },
+                {
+                    &quot;@type&quot;: &quot;NominalVoltage&quot;,
+                    &quot;hasNumericalPart&quot;: {
+                        &quot;@type&quot;: &quot;RealData&quot;,
+                        &quot;hasNumberValue&quot;: 3.8
+                    },
+                    &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
+                }
+              ]
+          },
+          &quot;hasOutput&quot;: {}
+      }
+  ]
+}
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Step-4:-Add-Test-Output-Description">
+<h3>Step 4: Add Test Output Description<a class="headerlink" href="#Step-4:-Add-Test-Output-Description" title="Permalink to this heading">#</a></h3>
+<p>We then define the output of the test using:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">BatteryTestResult</span></code> as the output type</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dcat:Dataset</span></code> to allow integration with data catalogs</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">dcat:Distribution</span></code> block specifying:</p>
+<ul>
+<li><p>The media type (<code class="docutils literal notranslate"><span class="pre">application/vnd.apache.parquet</span></code>)</p></li>
+<li><p>The file URL on Zenodo</p></li>
+<li><p>A link to the <code class="docutils literal notranslate"><span class="pre">csvw:tableSchema</span></code> that defines column-level meaning</p></li>
+</ul>
+</li>
+</ul>
+<p>This step connects the metadata to the actual test data, bridging semantics and raw content.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>metadata = {
+  &quot;@context&quot;: &quot;https://w3id.org/emmo/domain/battery/context&quot;,
+  &quot;@graph&quot;: [
+      {
+          &quot;@type&quot;: &quot;BatteryTest&quot;,
+          &quot;hasTestObject&quot;: {
+              &quot;@type&quot;: &quot;LithiumIonPolymerBattery&quot;,
+              &quot;hasPositiveElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;LithiumCobaltOxide&quot;
+                  }
+              },
+              &quot;hasNegativeElectrode&quot;: {
+                  &quot;@type&quot;: &quot;Electrode&quot;,
+                  &quot;hasActiveMaterial&quot;: {
+                      &quot;@type&quot;: &quot;Graphite&quot;
+                  }
+              },
+              &quot;hasElectrolyte&quot;: {
+                  &quot;@type&quot;: &quot;PolymerElectrolyte&quot;
+              },
+              &quot;hasProperty&quot;: [
+                {
+                    &quot;@type&quot;: &quot;NominalCapacity&quot;,
+                    &quot;hasNumericalPart&quot;: {
+                        &quot;@type&quot;: &quot;RealData&quot;,
+                        &quot;hasNumberValue&quot;: 6500
+                    },
+                    &quot;hasMeasurementUnit&quot;: &quot;emmo:MilliAmpereHour&quot;
+                },
+                {
+                    &quot;@type&quot;: &quot;NominalVoltage&quot;,
+                    &quot;hasNumericalPart&quot;: {
+                        &quot;@type&quot;: &quot;RealData&quot;,
+                        &quot;hasNumberValue&quot;: 3.8
+                    },
+                    &quot;hasMeasurementUnit&quot;: &quot;emmo:Volt&quot;
+                }
+              ]
+          },
+          &quot;hasOutput&quot;: {
+                &quot;@type&quot;: [&quot;BatteryTestResult&quot;, &quot;dcat:Dataset&quot;],
+                &quot;dcat:distribution&quot;: {
+                    &quot;@type&quot;: &quot;dcat:Distribution&quot;,
+                    &quot;dcat:mediaType&quot;: &quot;application/vnd.apache.parquet&quot;,
+                    &quot;dcat:downloadURL&quot;: &quot;https://zenodo.org/records/15127867/files/sintef__melasta-slpba842124hv-2024-10-23-15077312__rate-testing.bdf.parquet&quot;,
+                    &quot;csvw:tableSchema&quot;: &quot;https://w3id.org/battery-data-alliance/ontology/battery-data-format/schema&quot;
+                }
+          }
+        }
+    ]
+}
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="Step-5:-Serialize-and-Save">
+<h3>Step 5: Serialize and Save<a class="headerlink" href="#Step-5:-Serialize-and-Save" title="Permalink to this heading">#</a></h3>
+<p>Once the full metadata structure is assembled, we serialize it to a <code class="docutils literal notranslate"><span class="pre">metadata.jsonld</span></code> file, ready for validation and reuse.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Save to file
+with open(&quot;metadata.jsonld&quot;, &quot;w&quot;) as f:
+    json.dump(metadata, f, indent=2)
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="Validate-Your-JSON-LD">
+<h2>Validate Your JSON-LD<a class="headerlink" href="#Validate-Your-JSON-LD" title="Permalink to this heading">#</a></h2>
+<p>You can copy-paste the contents of <code class="docutils literal notranslate"><span class="pre">metadata.jsonld</span></code> into an online validator like:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://json-ld.org/playground/">JSON-LD Playground</a></p></li>
+</ul>
+<p>Check that your metadata resolves correctly and uses well-formed vocabularies.</p>
+<hr class="docutils" />
+<section id="Why-This-Matters">
+<h3>Why This Matters<a class="headerlink" href="#Why-This-Matters" title="Permalink to this heading">#</a></h3>
+<p>By building up the metadata one layer at a time:</p>
+<ul class="simple">
+<li><p>You maintain clarity about what each part of the structure represents</p></li>
+<li><p>You learn how to reuse ontology terms consistently</p></li>
+<li><p>You prepare metadata that is valid, discoverable, and linked</p></li>
+</ul>
+<p>This modular approach helps demystify semantic metadata and prepares your dataset for <strong>4-star battery data</strong>—and sets the stage for the final star: linked data integration.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="Summary">
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, you learned how to satisfy the requirements for <strong>4-star battery data</strong> by creating structured, ontology-annotated metadata in JSON-LD format.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Step</p></th>
+<th class="head"><p>What You Did</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Define structure</p></td>
+<td><p>Created a JSON-LD template with <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> and <code class="docutils literal notranslate"><span class="pre">BatteryTest</span></code> type</p></td>
+</tr>
+<tr class="row-odd"><td><p>Describe the battery</p></td>
+<td><p>Added a semantic description of the test object using EMMO and BattINFO terms</p></td>
+</tr>
+<tr class="row-even"><td><p>Add properties</p></td>
+<td><p>Included battery properties like nominal voltage and capacity with units</p></td>
+</tr>
+<tr class="row-odd"><td><p>Link to dataset output</p></td>
+<td><p>Connected the test to a data file and schema using <code class="docutils literal notranslate"><span class="pre">dcat</span></code> and <code class="docutils literal notranslate"><span class="pre">csvw</span></code> terms</p></td>
+</tr>
+<tr class="row-even"><td><p>Save metadata</p></td>
+<td><p>Serialized the complete metadata to a <code class="docutils literal notranslate"><span class="pre">metadata.jsonld</span></code> file</p></td>
+</tr>
+</tbody>
+</table>
+<p>By following this workflow, your dataset now includes:</p>
+<ul class="simple">
+<li><p><strong>Machine-readable semantic metadata</strong> describing both the battery and the test</p></li>
+<li><p><strong>Ontology-backed terms</strong> that promote clarity and interoperability</p></li>
+<li><p>A structured foundation for <strong>linked data integration</strong> at the 5-star level</p></li>
+</ul>
+<p>This notebook provides a clear and extensible pattern for making battery datasets semantically rich and FAIR-compliant.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-by-Step-Metadata-Construction">Step-by-Step Metadata Construction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-1:-Start-with-a-Skeleton">Step 1: Start with a Skeleton</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-2:-Add-Battery-Cell-Description">Step 2: Add Battery Cell Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-3:-Add-Key-Properties">Step 3: Add Key Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-4:-Add-Test-Output-Description">Step 4: Add Test Output Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Step-5:-Serialize-and-Save">Step 5: Serialize and Save</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Validate-Your-JSON-LD">Validate Your JSON-LD</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Why-This-Matters">Why This Matters</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/star-4/star-4-notebook.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2021-2023.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,994 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>★ 1-Star Battery Data &#8212; Domain Electrochemistry Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'star-1/star-1-notebook';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Star Two: Structured Data" href="../star-2/star-2.html" />
+    <link rel="prev" title="Star One: Open Access" href="star-1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the ontology..."
+         aria-label="Search the ontology..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Domain Electrochemistry Ontology</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="star-1.html">
+                        Star One: Open Access
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star Two: Structured Data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star Three: Open Formats
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-4/star-4.html">
+                        Star Four: Semantic Metadata
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-5/star-5.html">
+                        Star Five: Linked Data
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-globe"></i></span>
+            <label class="sr-only">Ontology Homepage</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../introduction/introduction.html">
+                        <no title>
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="star-1.html">
+                        Star One: Open Access
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-2/star-2.html">
+                        Star Two: Structured Data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-3/star-3.html">
+                        Star Three: Open Formats
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-4/star-4.html">
+                        Star Four: Semantic Metadata
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../star-5/star-5.html">
+                        Star Five: Linked Data
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-globe"></i></span>
+            <label class="sr-only">Ontology Homepage</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">★ 1-Star Battery Data</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="star-1.html" class="nav-link">Star One: Open Access</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">★ 1-Star Battery Data</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="★-1-Star-Battery-Data">
+<h1>★ 1-Star Battery Data<a class="headerlink" href="#★-1-Star-Battery-Data" title="Permalink to this heading">#</a></h1>
+<p>This notebook demonstrates how to publish a battery dataset to the Zenodo Sandbox using their REST API. This corresponds to Star One in the Five-Star Battery Data recommendation.</p>
+<hr class="docutils" />
+<section id="What-does-one-star-mean?">
+<h2>What does one-star mean?<a class="headerlink" href="#What-does-one-star-mean?" title="Permalink to this heading">#</a></h2>
+<p>In the 5-Star Battery Data framework, 1-star data is:</p>
+<ul class="simple">
+<li><p>Published to a public repository (e.g., Zenodo), and</p></li>
+<li><p>Assigned a clear, permissive license for reuse (e.g., CC-BY 4.0)</p></li>
+</ul>
+<p>This notebook demonstrates how you can achieve your first star.</p>
+</section>
+<hr class="docutils" />
+<section id="What-is-a-public-repository?">
+<h2>What is a public repository?<a class="headerlink" href="#What-is-a-public-repository?" title="Permalink to this heading">#</a></h2>
+<p>A public repository is an open-access platform where research data can be deposited, described, and shared with others. It ensures that your dataset is openly accessible, citable, and preserved long-term by assigning a persistent identifier such as a DOI. Public repositories require key descriptive metadata—including title, abstract, keywords, licensing, and creator information—formatted in a machine-readable way to support indexing and reuse. Platforms like Zenodo support these features
+natively and allow metadata enrichment with identifiers such as ORCID (for authors) and ROR (for institutions), promoting clarity and credit attribution.</p>
+</section>
+<hr class="docutils" />
+<section id="Why-is-this-important?">
+<h2>Why is this important?<a class="headerlink" href="#Why-is-this-important?" title="Permalink to this heading">#</a></h2>
+<p>Publishing your data in a public repository significantly increases its visibility, trustworthiness, and impact. A persistent identifier ensures others can reliably cite your dataset, while the repository guarantees long-term access and preservation. By including rich, standardized metadata, your dataset becomes easier to find, integrate, and reuse within research infrastructures, knowledge graphs, and semantic search tools—supporting the broader goals of open science and FAIR data.</p>
+</section>
+<hr class="docutils" />
+<section id="What-we-will-do">
+<h2>What we will do<a class="headerlink" href="#What-we-will-do" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, we will:</p>
+<ol class="arabic simple">
+<li><p><strong>Load</strong> your Zenodo Sandbox access token securely from a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file</p></li>
+<li><p><strong>Define</strong> dataset metadata including creator names, ORCID, affiliation, and license</p></li>
+<li><p><strong>Create</strong> a deposition in the Zenodo Sandbox via the API</p></li>
+<li><p><strong>Upload</strong> a structured <code class="docutils literal notranslate"><span class="pre">.csv</span></code> battery data file</p></li>
+<li><p><strong>Publish</strong> the dataset and obtain a shareable DOI-like URL</p></li>
+</ol>
+<hr class="docutils" />
+</section>
+<section id="What-is-the-Zenodo-Sandbox?">
+<h2>What is the Zenodo Sandbox?<a class="headerlink" href="#What-is-the-Zenodo-Sandbox?" title="Permalink to this heading">#</a></h2>
+<p>The Zenodo Sandbox is a publicly available test server that mimics the real Zenodo publishing platform. It allows you to safely practice uploading datasets, registering metadata, and minting DOIs—without affecting the live site or making anything publicly visible.</p>
+<p>You can upload data in two ways:</p>
+<ul class="simple">
+<li><p>Via the web interface – a user-friendly option ideal for one-time or manual uploads.</p></li>
+<li><p>Via the API – a powerful method for automating uploads, especially useful when publishing many datasets or integrating Zenodo into your data processing pipeline.</p></li>
+</ul>
+<p>While the web interface is convenient, setting up a pipeline through the API is much more efficient and scalable for frequent or large-volume uploads. In this notebook, we will demonstrate how to use the API.</p>
+<p><strong>Zenodo Sandbox URL:</strong> <a class="reference external" href="https://sandbox.zenodo.org">https://sandbox.zenodo.org</a></p>
+<hr class="docutils" />
+<section id="What-is-an-Access-Token-and-Why-Do-I-Need-One?">
+<h3>What is an Access Token and Why Do I Need One?<a class="headerlink" href="#What-is-an-Access-Token-and-Why-Do-I-Need-One?" title="Permalink to this heading">#</a></h3>
+<p>An access token is like a digital key that lets your code talk to Zenodo on your behalf. Instead of logging in with a username and password, you use this token to securely connect to Zenodo’s system—especially when using automated tools or scripts.</p>
+<p>It tells Zenodo who you are and what you’re allowed to do, such as:</p>
+<ul class="simple">
+<li><p>Uploading files</p></li>
+<li><p>Editing metadata</p></li>
+<li><p>Publishing or updating records</p></li>
+</ul>
+<p>This is essential when using the Zenodo Sandbox API to automate your data publishing workflow. Without an access token, Zenodo won’t know who’s making the request or whether they have permission.</p>
+</section>
+<hr class="docutils" />
+<section id="How-to-Create-an-Access-Token">
+<h3>How to Create an Access Token<a class="headerlink" href="#How-to-Create-an-Access-Token" title="Permalink to this heading">#</a></h3>
+<p>Before using the API, you need a personal <strong>access token</strong> to authenticate your requests. Here’s how to create one:</p>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://sandbox.zenodo.org">https://sandbox.zenodo.org</a> and sign in (you may need to register an account).</p></li>
+<li><p>Click your profile icon and choose <strong>Applications</strong>.</p></li>
+</ol>
+<img alt="Alt text" src="../_images/zenodo_sandbox_applications.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click <strong>New Token</strong>.</p></li>
+</ol>
+<img alt="Alt text" src="../_images/zenodo_sandbox_new_token.png" />
+<ol class="arabic simple" start="4">
+<li><p>Give it a name like <code class="docutils literal notranslate"><span class="pre">&quot;five_star_data_test_token&quot;</span></code>.</p></li>
+<li><p>Enable the following scopes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">deposit:write</span></code> (upload new data)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">deposit:actions</span></code> (publish data)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">user:email</span></code> (optional, to identify yourself)</p></li>
+</ul>
+</li>
+<li><p>Click <strong>Create</strong> and copy the generated token.</p></li>
+</ol>
+<img alt="Alt text" src="../_images/zenodo_sandbox_create_token.png" />
+</section>
+<hr class="docutils" />
+<section id="Load-Access-Token">
+<h3>Load Access Token<a class="headerlink" href="#Load-Access-Token" title="Permalink to this heading">#</a></h3>
+<p>To keep your token secure, you should store it in a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file rather than hardcoding it into this notebook. Open the <code class="docutils literal notranslate"><span class="pre">.env</span></code> file that accompanies this notebook and paste your token into the following field:</p>
+<div class="highlight-env notranslate"><div class="highlight"><pre><span></span>ZENODO_SANDBOX_TOKEN=paste_your_sandbox_token_here
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
+# 🛠 LOAD DEPENDENCIES
+# ====================
+import os
+import sys
+import requests
+from dotenv import load_dotenv
+from IPython.display import display, Markdown
+import re
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span># ====================
+# 🛠 LOAD ACCESS TOKEN
+# ====================
+load_dotenv(override=True)
+ACCESS_TOKEN = os.getenv(&quot;ZENODO_SANDBOX_TOKEN&quot;)
+DEFAULT_PLACEHOLDER = &quot;paste_your_sandbox_token_here&quot;
+
+# ============================
+# ✅ VALIDATE ACCESS TOKEN
+# ============================
+if not ACCESS_TOKEN or ACCESS_TOKEN == DEFAULT_PLACEHOLDER:
+    print(&quot;\n❌ Access token is missing or still set to the default placeholder.&quot;)
+    print(&quot;👉 Please open your `.env` file and replace the placeholder with your actual Zenodo Sandbox token:&quot;)
+    print(&quot;   ZENODO_SANDBOX_TOKEN=your_actual_token_here\n&quot;)
+    sys.exit(1)
+
+print(f&quot;✅ Access token loaded&quot;)
+
+# ====================
+# 🔗 ZENODO SANDBOX API
+# ====================
+ZENODO_SANDBOX_URL = &quot;https://sandbox.zenodo.org/api/deposit/depositions&quot;
+HEADERS = {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Authorization&quot;: f&quot;Bearer {ACCESS_TOKEN}&quot;
+}
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+✅ Access token loaded
+</pre></div></div>
+</div>
+</section>
+</section>
+<section id="Define-metadata">
+<h2>Define metadata<a class="headerlink" href="#Define-metadata" title="Permalink to this heading">#</a></h2>
+<p>Before uploading a file to Zenodo, you must define the metadata that describes your dataset. This metadata helps make the dataset <strong>searchable, citable, and understandable</strong>. Zenodo expects metadata in a structured format, aligned with community standards like schema.org.</p>
+<p>In this example, we define the following key fields:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code>: A descriptive name for the dataset</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">upload_type</span></code>: Specifies the content type (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;dataset&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;software&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;publication&quot;</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>: A brief abstract or summary of what the dataset contains</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">creators</span></code>: A list of contributors including:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: Full name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">affiliation</span></code>: Institutional affiliation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">orcid</span></code>: ORCID identifier (machine-readable researcher ID)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">affiliation_ror</span></code>: ROR identifier for the institution (structured organizational ID)</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">keywords</span></code>: Tags that make the record more discoverable</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">access_right</span></code>: <code class="docutils literal notranslate"><span class="pre">&quot;open&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;embargoed&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;restricted&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;closed&quot;</span></code> depending on data availability</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">license</span></code>: Specifies how the data can be reused (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;CC-BY-4.0&quot;</span></code> for Creative Commons Attribution)</p></li>
+</ul>
+<blockquote>
+<div><p><strong>✏️ Customize your metadata</strong></p>
+<p>Before running the notebook, make sure to update the metadata fields with your own information. Replace the following placeholders:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Last</span> <span class="pre">Name,</span> <span class="pre">First</span> <span class="pre">Name&quot;</span></code> → Your full name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Organization</span> <span class="pre">Name&quot;</span></code> → Your current institution or affiliation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;https://orcid.org/YOUR-ORCID-NUMBER&quot;</span></code> → Your personal <a class="reference external" href="https://orcid.org">ORCID</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;https://ror.org/YOUR-AFFILIATION-ROR-ID&quot;</span></code> → Your organization’s <a class="reference external" href="https://ror.org">ROR ID</a></p></li>
+</ul>
+<p>If you don’t have an ORCID or ROR ID, you can temporarily remove those fields, but we recommend including them for better interoperability.</p>
+<p>For a full description of all metadata fields and API endpoints, see the <a class="reference external" href="https://developers.zenodo.org">Zenodo REST API documentation</a>.</p>
+</div></blockquote>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
+# 📝 METADATA
+# ====================
+metadata = {
+    &quot;metadata&quot;: {
+        &quot;title&quot;: &quot;Example Battery Dataset&quot;,
+        &quot;upload_type&quot;: &quot;dataset&quot;,
+        &quot;description&quot;: &quot;A simple CSV file representing battery time series data.&quot;,
+        &quot;creators&quot;: [
+            {
+                &quot;name&quot;: &quot;Clark, Simon&quot;,
+                &quot;affiliation&quot;: &quot;SINTEEF&quot;,
+                &quot;orcid&quot;: &quot;https://orcid.org/0000-0002-8758-6109&quot;,
+                &quot;affiliation_ror&quot;: &quot;https://ror.org/01f677e56&quot;
+            }
+        ],
+        &quot;keywords&quot;: [&quot;battery&quot;, &quot;time series&quot;, &quot;example&quot;],
+        &quot;access_right&quot;: &quot;open&quot;,
+        &quot;license&quot;: &quot;CC-BY-4.0&quot;
+    }
+}
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ============================
+# VALIDATE ORCID AND ROR
+# ============================
+
+# This block is checking to validate that you have provided a value for the ORCID and RORID in the metadata snippet above.
+
+# Regular expression patterns
+orcid_pattern = r&quot;^https:\/\/orcid\.org\/\d{4}-\d{4}-\d{4}-\d{4}$&quot;
+ror_pattern = r&quot;^https:\/\/ror\.org\/[0-9a-z]{9}$&quot;
+
+creator = metadata[&quot;metadata&quot;][&quot;creators&quot;][0]
+orcid = creator.get(&quot;orcid&quot;, &quot;&quot;)
+rorid = creator.get(&quot;affiliation_ror&quot;, &quot;&quot;)
+
+# Check if ORCID and ROR ID are valid
+valid_orcid = re.match(orcid_pattern, orcid)
+valid_rorid = re.match(ror_pattern, rorid)
+
+if not valid_orcid or not valid_rorid:
+    display(Markdown(&quot;&quot;&quot;
+**❌ ORCID or ROR ID is missing or invalid.**
+👉 Please update the metadata with your actual, properly formatted identifiers.
+
+- ORCID should look like: `https://orcid.org/0000-0002-1825-0097`
+- ROR ID should look like: `https://ror.org/05gq02987`
+&quot;&quot;&quot;))
+    sys.exit(1)
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Create-a-Draft-Record">
+<h2>Create a Draft Record<a class="headerlink" href="#Create-a-Draft-Record" title="Permalink to this heading">#</a></h2>
+<p>Once the metadata is defined, the next step is to create <strong>a private draft record</strong> in Zenodo (also called a <strong>“deposition”</strong>) that holds your data and metadata before publication. We use a <code class="docutils literal notranslate"><span class="pre">POST</span></code> request to the Zenodo API, sending the metadata as JSON along with the authentication headers. If the request is successful (<code class="docutils literal notranslate"><span class="pre">status_code</span> <span class="pre">==</span> <span class="pre">201</span></code>), Zenodo returns a JSON response containing the deposition ID and other metadata.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">ZENODO_SANDBOX_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We extract the <code class="docutils literal notranslate"><span class="pre">deposition_id</span></code> from the response. This ID is required to:</p>
+<ul class="simple">
+<li><p>Upload files to the correct draft record</p></li>
+<li><p>Refer to the deposition in later actions (like publishing or deleting)</p></li>
+</ul>
+<p>If the deposition is not created successfully, the script prints the error message and stops.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
+# 📤 CREATE DEPOSITION
+# ====================
+response = requests.post(ZENODO_SANDBOX_URL, json=metadata, headers=HEADERS)
+if response.status_code == 201:
+    deposition = response.json()
+    deposition_id = deposition[&quot;id&quot;]
+    print(f&quot;✅ Created deposition: {deposition_id}&quot;)
+else:
+    print(&quot;❌ Failed to create deposition:&quot;, response.text)
+    exit(1)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+✅ Created deposition: 325239
+</pre></div></div>
+</div>
+</section>
+<section id="Upload-a-file">
+<h2>Upload a file<a class="headerlink" href="#Upload-a-file" title="Permalink to this heading">#</a></h2>
+<p>After creating a deposition, the next step is to upload the dataset file. In this example, we upload a structured <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file that follows the Battery Data Format (BDF) standard. We start by defining the path to the file and extracting the filename. Then we open the file in binary mode and use a <code class="docutils literal notranslate"><span class="pre">POST</span></code> request to send it to Zenodo. The upload endpoint is based on the deposition ID obtained earlier. If the upload is successful (<code class="docutils literal notranslate"><span class="pre">status_code</span> <span class="pre">==</span> <span class="pre">201</span></code>), a confirmation message is printed. If
+not, the error is displayed and the script exits.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">ℹ️ <strong>Note:</strong></div>
+<div class="line">You can upload multiple files to the same deposition by repeating this process. All files must be uploaded <strong>before</strong> publishing the record.</div>
+</div>
+</div></blockquote>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
+# 📎 UPLOAD FILE
+# ====================
+file_path = &quot;structured_battery_data.bdf.csv&quot;
+filename = os.path.basename(file_path)
+
+with open(file_path, &quot;rb&quot;) as file:
+    files = {&quot;file&quot;: (filename, file)}
+    upload_url = f&quot;{ZENODO_SANDBOX_URL}/{deposition_id}/files&quot;
+    r = requests.post(upload_url, files=files, headers={&quot;Authorization&quot;: f&quot;Bearer {ACCESS_TOKEN}&quot;})
+    if r.status_code == 201:
+        print(f&quot;✅ File &#39;{filename}&#39; uploaded successfully.&quot;)
+    else:
+        print(&quot;❌ File upload failed:&quot;, r.text)
+        exit(1)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+✅ File &#39;structured_battery_data.bdf.csv&#39; uploaded successfully.
+</pre></div></div>
+</div>
+</section>
+<section id="Publish-the-record">
+<h2>Publish the record<a class="headerlink" href="#Publish-the-record" title="Permalink to this heading">#</a></h2>
+<p>Once the metadata and file upload steps are complete, the final step in the Zenodo workflow is to <strong>publish</strong> the deposition. This action finalizes the dataset and makes it publicly accessible in the Zenodo Sandbox. Publishing mimics what you would do in a real research scenario, where a DOI is minted and the record becomes part of a public repository.</p>
+<blockquote>
+<div><p><strong>🚨 Note:</strong></p>
+<p>Records that are published in the sandbox <strong>cannot be deleted</strong>! We strongly recommend using a dry run for test uploads.</p>
+</div></blockquote>
+<section id="Use-dry-run-mode-to-avoid-polluting-the-sandbox">
+<h3>Use dry run mode to avoid polluting the sandbox<a class="headerlink" href="#Use-dry-run-mode-to-avoid-polluting-the-sandbox" title="Permalink to this heading">#</a></h3>
+<p>To give students or developers the <strong>full experience of creating and uploading metadata and files</strong> without leaving clutter behind, we include a <code class="docutils literal notranslate"><span class="pre">dry_run</span></code> option in the script. When <code class="docutils literal notranslate"><span class="pre">dry_run</span> <span class="pre">=</span> <span class="pre">True</span></code>, the script will:</p>
+<ul class="simple">
+<li><p>Go through all the steps: load token, define metadata, create a deposition, and upload a file.</p></li>
+<li><p><strong>Stop before publishing</strong>, and instead <strong>delete the draft deposition</strong>.</p></li>
+<li><p>Print a confirmation that the deposition was deleted.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dry_run</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>If you would like to publish a real record to the sandbox to get the full effect, then set:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dry_run</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>You should only do this once, to avoid creating duplicate records.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
+# SET DRY RUN VARIABLE
+# ====================
+
+dry_run = False
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span># ====================
+# ✅ PUBLISH OR DELETE
+# ====================
+
+if dry_run:
+    print(&quot;🧹 Dry run enabled. Deleting test deposition...&quot;)
+    r = requests.delete(f&quot;{ZENODO_SANDBOX_URL}/{deposition_id}&quot;, headers=HEADERS)
+    if r.status_code == 204:
+        print(&quot;🗑️ Test deposition deleted successfully.&quot;)
+    else:
+        print(&quot;⚠️ Failed to delete test deposition:&quot;, r.text)
+else:
+    publish_url = f&quot;{ZENODO_SANDBOX_URL}/{deposition_id}/actions/publish&quot;
+    r = requests.post(publish_url, headers=HEADERS)
+
+    if r.status_code == 202:
+        print(f&quot;🎉 Dataset published: https://sandbox.zenodo.org/record/{deposition_id}&quot;)
+    else:
+        print(&quot;❌ Failed to publish dataset:&quot;, r.text)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+🎉 Dataset published: https://sandbox.zenodo.org/record/325239
+</pre></div></div>
+</div>
+</section>
+</section>
+<section id="Summary">
+<h2>Summary<a class="headerlink" href="#Summary" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, you learned how to publish a structured battery dataset to the Zenodo Sandbox using their REST API. This hands-on workflow walks through every step needed to achieve <strong>1-star battery data</strong> in the Five-Star Battery Data framework:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Step</p></th>
+<th class="head"><p>What You Did</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Create a token</p></td>
+<td><p>Generated a personal access token from the Zenodo Sandbox</p></td>
+</tr>
+<tr class="row-odd"><td><p>Define metadata</p></td>
+<td><p>Structured your dataset description using standard fields</p></td>
+</tr>
+<tr class="row-even"><td><p>Create a deposition</p></td>
+<td><p>Created a new draft record to hold your files and metadata</p></td>
+</tr>
+<tr class="row-odd"><td><p>Upload your data</p></td>
+<td><p>Uploaded a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file representing structured battery data</p></td>
+</tr>
+<tr class="row-even"><td><p>Ran a dry run</p></td>
+<td><p>Practiced safely by deleting test records before publishing</p></td>
+</tr>
+<tr class="row-odd"><td><p>(Optional) Publish</p></td>
+<td><p>Finalized the record and generated a DOI-like URL</p></td>
+</tr>
+</tbody>
+</table>
+<p>By following this process, you’ve made your dataset:</p>
+<ul class="simple">
+<li><p>Publicly accessible</p></li>
+<li><p>Citable with a stable identifier</p></li>
+<li><p>Reusable under a clear license</p></li>
+<li><p>Discoverable through structured metadata</p></li>
+</ul>
+<p>This notebook gives you a complete and reusable pattern for publishing scientific datasets in a FAIR and standards-aligned way.</p>
+<hr class="docutils" />
+<p><img alt="EU Flag" class="no-scaled-link" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" width="100" /></p>
+<div class="line-block">
+<div class="line"><strong>This work has received funding from the European Union under the Horizon Europe programme.</strong></div>
+<div class="line">Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Commission. Neither the European Union nor the granting authority can be held responsible for them.</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-does-one-star-mean?">What does one-star mean?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-is-a-public-repository?">What is a public repository?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Why-is-this-important?">Why is this important?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-we-will-do">What we will do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-is-the-Zenodo-Sandbox?">What is the Zenodo Sandbox?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#What-is-an-Access-Token-and-Why-Do-I-Need-One?">What is an Access Token and Why Do I Need One?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#How-to-Create-an-Access-Token">How to Create an Access Token</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Load-Access-Token">Load Access Token</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Define-metadata">Define metadata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Create-a-Draft-Record">Create a Draft Record</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Upload-a-file">Upload a file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Publish-the-record">Publish the record</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Use-dry-run-mode-to-avoid-polluting-the-sandbox">Use dry run mode to avoid polluting the sandbox</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/star-1/star-1-notebook.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2021-2023.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
