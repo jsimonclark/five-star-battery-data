@@ -1,11 +1,6 @@
 Welcome to the Five-Star Battery Data MOOC
 ==========================================
 
-.. image:: _static/images/five_star_banner.png
-   :alt: Five-Star Battery Data MOOC
-   :class: sd-rounded sd-shadow sd-mb-4
-   :width: 100%
-
 Welcome! This MOOC teaches you how to turn raw battery data into structured, reusable, and linked digital assets — one star at a time.
 
 Get started below:
@@ -24,7 +19,7 @@ Get started below:
         :link: star-1/star-1-notebook.html
         :text-align: center
 
-        :octicon:`cloud-upload;1em;sd-text-primary`  One-Star: Open Access
+        :octicon:`cloud;1em;sd-text-primary`  One-Star: Open Access
         ^^^^^^^^^^^^^^^^^^^^^^^^^^
         Publish your data with a permissive license in a trusted repository.
 
@@ -83,10 +78,5 @@ Get started below:
    :maxdepth: 1
 
    introduction/introduction
-   star-1/star-1-notebook
-   star-2/star-2-notebook
-   star-3/star-3-notebook
-   star-4/star-4-notebook
-   star-5/star-5-notebook
-   summary/summary
+   discussion/discussion
    quiz/quiz

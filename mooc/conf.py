@@ -119,17 +119,11 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    # Top navbar: only custom links, no auto toctree.
+    # Use the built-in navbar; top links are derived from the master toctree.
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-links"],
+    "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-button", "navbar-icon-links"],
-    "navbar_links": [
-        {"name": "The Course", "url": "introduction/introduction.html", "internal": True},
-        {"name": "Discussion", "url": "discussion/discussion.html", "internal": True},
-        {"name": "Quiz", "url": "quiz/quiz.html", "internal": True},
-    ],
     # Sidebar nav shows the course structure.
-    "show_sidebar": True,
     "show_nav_level": 2,   # expand through star pages
     "show_toc_level": 0,
     "navigation_depth": 4,
@@ -137,7 +131,6 @@ html_theme_options = {
     "search_bar_text": "Search the course...",
     "show_prev_next": False,
     "footer_start": ["copyright"],
-    "footer_center": ["sphinx-version"],
     "pygment_light_style": "friendly",
     "pygment_dark_style": "lightbulb",
 }
