@@ -21,6 +21,9 @@ jobs:
         run: |
           pip install -r mooc/sphinx-requirements.txt
 
+      - name: Install Additional System Dependencies
+        run: sudo apt-get update -y && sudo apt-get install -y pandoc
+
       - name: Build Sphinx HTML
         run: |
           sphinx-build -b html mooc _build/html
