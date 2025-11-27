@@ -459,6 +459,9 @@ document.write(`
 <h1>★ 1-Star Battery Data<a class="headerlink" href="#★-1-Star-Battery-Data" title="Permalink to this heading">#</a></h1>
 <p>This notebook demonstrates how to publish a battery dataset to the Zenodo Sandbox using their REST API. This corresponds to Star One in the Five-Star Battery Data recommendation.</p>
 <hr class="docutils" />
+<section id="Watch">
+<h2>Watch<a class="headerlink" href="#Watch" title="Permalink to this heading">#</a></h2>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/MSOuXOc7Ctc" title="Star 1: Open Access" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div></section>
 <section id="What-does-one-star-mean?">
 <h2>What does one-star mean?<a class="headerlink" href="#What-does-one-star-mean?" title="Permalink to this heading">#</a></h2>
 <p>In the 5-Star Battery Data framework, 1-star data is:</p>
@@ -549,7 +552,7 @@ natively and allow metadata enrichment with identifiers such as ORCID (for autho
 </div>
 <hr class="docutils" />
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
@@ -565,7 +568,7 @@ import re
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span># ====================
@@ -640,7 +643,7 @@ HEADERS = {
 <p>For a full description of all metadata fields and API endpoints, see the <a class="reference external" href="https://developers.zenodo.org">Zenodo REST API documentation</a>.</p>
 </div></blockquote>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
@@ -668,7 +671,7 @@ metadata = {
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ============================
@@ -715,7 +718,7 @@ if not valid_orcid or not valid_rorid:
 </ul>
 <p>If the deposition is not created successfully, the script prints the error message and stops.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
@@ -737,7 +740,7 @@ else:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-✅ Created deposition: 325239
+✅ Created deposition: 409313
 </pre></div></div>
 </div>
 </section>
@@ -752,7 +755,7 @@ not, the error is displayed and the script exits.</p>
 </div>
 </div></blockquote>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
@@ -806,7 +809,7 @@ with open(file_path, &quot;rb&quot;) as file:
 </div>
 <p>You should only do this once, to avoid creating duplicate records.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># ====================
@@ -818,7 +821,7 @@ dry_run = False
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span># ====================
@@ -848,7 +851,7 @@ else:
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-🎉 Dataset published: https://sandbox.zenodo.org/record/325239
+🎉 Dataset published: https://sandbox.zenodo.org/record/409313
 </pre></div></div>
 </div>
 </section>
@@ -917,6 +920,7 @@ else:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Watch">Watch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-does-one-star-mean?">What does one-star mean?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#What-is-a-public-repository?">What is a public repository?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Why-is-this-important?">Why is this important?</a></li>
