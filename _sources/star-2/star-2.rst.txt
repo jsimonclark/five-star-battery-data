@@ -18,12 +18,10 @@ Watch
 
    <!-- Replace VIDEO_ID_STAR2 with the unlisted YouTube ID for Star 2 -->
    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-     <iframe src="https://www.youtube.com/embed/VIDEO_ID_STAR2" title="Star 2: Structured Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+     <iframe src="https://www.youtube.com/embed/_z6Xtbx8QwM" title="Star 2: Structured Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
    </div>
 
-.. note::
 
-   Add your unlisted YouTube URL by replacing ``VIDEO_ID_STAR2`` in the embed above.
 
 Read (key points)
 -----------------
