@@ -39,6 +39,9 @@ extensions = ['sphinx.ext.intersphinx',
               'nbsphinx',
               'sphinx_copybutton',
               ]
+nbsphinx_prolog = r"""
+.. include:: /_course_toc.rst
+"""
 
 # Keep the course sidebar visible on notebook pages by injecting a hidden toctree.
 nbsphinx_prolog = r"""
@@ -154,10 +157,15 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    # Top navbar pulls links from the master toctree.
+    # Keep the top bar simple and static.
     "navbar_start": ["navbar-logo"],
-    "navbar_center": ["navbar-nav"],
+    "navbar_center": ["navbar-links"],
     "navbar_end": ["search-button", "navbar-icon-links"],
+    "navbar_links": [
+        {"name": "Introduction", "url": "introduction/introduction.html", "internal": True},
+        {"name": "Discussion", "url": "discussion/discussion.html", "internal": True},
+        {"name": "Quiz", "url": "quiz/quiz.html", "internal": True},
+    ],
     # Sidebar navigation: keep siblings visible and expanded to course depth.
     "navigation_depth": 4,
     "collapse_navigation": False,

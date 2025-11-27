@@ -1,6 +1,8 @@
 Star Four: Semantic Metadata
 ==========================================
 
+.. include:: /_course_toc.rst
+
 .. contents:: Module outline
    :depth: 1
    :local:

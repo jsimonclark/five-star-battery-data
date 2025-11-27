@@ -1,6 +1,8 @@
 Star One: Open Access
 ==========================================
 
+.. include:: /_course_toc.rst
+
 .. contents:: Module outline
    :depth: 1
    :local:

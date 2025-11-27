@@ -1,6 +1,8 @@
 Discussion
 ==========
 
+.. include:: /_course_toc.rst
+
 Use this page to collect questions, clarifications, and common issues as learners go through the course.
 
 - If you host discussion elsewhere (forum/Slack/Discord), add the link here so learners can jump directly.

@@ -34,6 +34,8 @@ Get started below:
    discussion/discussion
    quiz/quiz
 
+.. include:: /_course_toc.rst
+
 .. toctree::
    :hidden:
    :maxdepth: 1

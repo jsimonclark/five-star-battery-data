@@ -1,6 +1,8 @@
 Star Two: Structured Data
 ==========================================
 
+.. include:: /_course_toc.rst
+
 .. contents:: Module outline
    :depth: 1
    :local:
