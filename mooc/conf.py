@@ -39,6 +39,22 @@ extensions = ['sphinx.ext.intersphinx',
               'nbsphinx',
               'sphinx_copybutton',
               ]
+nbsphinx_prolog = r"""
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   index
+   introduction/introduction
+   star-1/star-1-notebook
+   star-2/star-2-notebook
+   star-3/star-3-notebook
+   star-4/star-4-notebook
+   star-5/star-5-notebook
+   summary/summary
+   quiz/quiz
+   discussion/discussion
+"""
 
 autosectionlabel_prefix_document = True
 
