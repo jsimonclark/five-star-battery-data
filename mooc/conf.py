@@ -135,14 +135,15 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    # Use the built-in navbar; top links are derived from the master toctree.
+    # Top navbar pulls links from the master toctree.
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["search-button", "navbar-icon-links"],
-    # Sidebar nav shows the course structure.
-    "show_nav_level": 2,   # expand through star pages
-    "show_toc_level": 0,
+    # Sidebar navigation: keep siblings visible and expanded to course depth.
     "navigation_depth": 4,
+    "collapse_navigation": False,
+    "show_nav_level": 2,
+    "show_toc_level": 0,
     "icon_links": [],
     "search_bar_text": "Search the course...",
     "show_prev_next": False,
