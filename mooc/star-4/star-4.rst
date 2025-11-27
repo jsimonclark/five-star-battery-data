@@ -18,12 +18,9 @@ Watch
 
    <!-- Replace VIDEO_ID_STAR4 with the unlisted YouTube ID for Star 4 -->
    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-     <iframe src="https://www.youtube.com/embed/VIDEO_ID_STAR4" title="Star 4: Semantic Metadata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+     <iframe src="https://www.youtube.com/embed/m9oDgkXUCLw" title="Star 4: Semantic Metadata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
    </div>
 
-.. note::
-
-   Add your unlisted YouTube URL by replacing ``VIDEO_ID_STAR4`` in the embed above.
 
 Read (key points)
 -----------------
