@@ -1,7 +1,7 @@
-Quiz: Five-Star Battery Data
-============================
+Quiz
+====
 
-Take the quiz below. It is delivered via Google Forms and will open in-place. Use the email you want to receive your result/certificate.
+Take the Five-Star Battery Data quiz below. It is delivered via Google Forms and will open in-place. Use the email you want to receive your result/certificate.
 
 .. raw:: html
 

@@ -39,6 +39,25 @@ extensions = ['sphinx.ext.intersphinx',
               'nbsphinx',
               'sphinx_copybutton',
               ]
+
+# Keep the course sidebar visible on notebook pages by injecting a hidden toctree.
+nbsphinx_prolog = r"""
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :titlesonly:
+
+   index
+   introduction/introduction
+   star-1/star-1-notebook
+   star-2/star-2-notebook
+   star-3/star-3-notebook
+   star-4/star-4-notebook
+   star-5/star-5-notebook
+   summary/summary
+   quiz/quiz
+   discussion/discussion
+"""
 nbsphinx_prolog = r"""
 .. toctree::
    :hidden:
@@ -153,7 +172,7 @@ html_theme_options = {
 }
 
 html_static_path = ["_static"]
-html_title = "★★★★★ Battery Data"
+html_title = "★★★★★"
 
 
 html_sidebars = {
