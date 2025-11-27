@@ -39,9 +39,6 @@ extensions = ['sphinx.ext.intersphinx',
               'nbsphinx',
               'sphinx_copybutton',
               ]
-nbsphinx_prolog = r"""
-.. include:: /_course_toc.rst
-"""
 
 # Keep the course sidebar visible on notebook pages by injecting a hidden toctree.
 nbsphinx_prolog = r"""
@@ -50,32 +47,15 @@ nbsphinx_prolog = r"""
    :maxdepth: 1
    :titlesonly:
 
-   index
-   introduction/introduction
-   star-1/star-1-notebook
-   star-2/star-2-notebook
-   star-3/star-3-notebook
-   star-4/star-4-notebook
-   star-5/star-5-notebook
-   summary/summary
-   quiz/quiz
-   discussion/discussion
-"""
-nbsphinx_prolog = r"""
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   index
-   introduction/introduction
-   star-1/star-1-notebook
-   star-2/star-2-notebook
-   star-3/star-3-notebook
-   star-4/star-4-notebook
-   star-5/star-5-notebook
-   summary/summary
-   quiz/quiz
-   discussion/discussion
+   /introduction/introduction
+   /star-1/star-1-notebook
+   /star-2/star-2-notebook
+   /star-3/star-3-notebook
+   /star-4/star-4-notebook
+   /star-5/star-5-notebook
+   /summary/summary
+   /quiz/quiz
+   /discussion/discussion
 """
 
 autosectionlabel_prefix_document = True
@@ -123,7 +103,7 @@ author = 'Simon Clark'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build', '_course_toc.rst']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
