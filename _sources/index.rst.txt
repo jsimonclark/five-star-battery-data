@@ -90,3 +90,4 @@ Get started below:
    star-4/star-4-notebook
    star-5/star-5-notebook
    summary/summary
+   quiz/quiz
