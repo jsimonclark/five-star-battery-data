@@ -16,12 +16,13 @@ Watch
 
 .. raw:: html
 
-   <video controls width="100%" preload="metadata">
-     <source src="star-1-video.mp4" type="video/mp4">
-     Your browser does not support the video tag.
-   </video>
+   <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+     <iframe src="https://www.youtube.com/embed/MSOuXOc7Ctc" title="Star 1: Open Access" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+   </div>
 
-:download:`Download the video <star-1-video.mp4>`
+.. note::
+
+   This video is hosted on YouTube as unlisted. If you move it elsewhere, update the embed URL above.
 
 Read (key points)
 -----------------

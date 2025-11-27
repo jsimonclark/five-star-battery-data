@@ -16,12 +16,14 @@ Watch
 
 .. raw:: html
 
-   <video controls width="100%" preload="metadata">
-     <source src="star-5-video.mov" type="video/quicktime">
-     Your browser does not support the video tag.
-   </video>
+   <!-- Replace VIDEO_ID_STAR5 with the unlisted YouTube ID for Star 5 -->
+   <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+     <iframe src="https://www.youtube.com/embed/VIDEO_ID_STAR5" title="Star 5: Linked Data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+   </div>
 
-:download:`Download the video <star-5-video.mov>`
+.. note::
+
+   Add your unlisted YouTube URL by replacing ``VIDEO_ID_STAR5`` in the embed above.
 
 Read (key points)
 -----------------
