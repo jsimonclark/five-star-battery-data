@@ -119,11 +119,11 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    "primary_sidebar_end": [],  # No left sidebar
-    "show_nav_level": 2,  # No expanded left sections
-    "show_toc_level": 0,  # This disables the "On This Page" sidebar everywhere
-    'show_sidebar': False,
-    "navbar_center": ["navbar-nav"],
+    # Keep the header clean; rely on the sidebar for navigation.
+    "navbar_center": [],
+    "show_sidebar": True,
+    "show_nav_level": 1,
+    "show_toc_level": 0,
     "icon_links": [
         {
             "name": "GitHub",
@@ -149,7 +149,10 @@ html_title = "Domain Electrochemistry Ontology"
 
 
 html_sidebars = {
-    "electrochemistry": ["search-field.html", "page-toc.html", "edit-this-page.html"],
+    "**": [
+        "search-field.html",
+        "sidebar-nav-bs.html",
+    ],
 }
 
 html_css_files = ["custom.css"]
