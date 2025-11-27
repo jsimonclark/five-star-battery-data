@@ -1,5 +1,5 @@
-Welcome to the Five-Star Battery Data MOOC
-==========================================
+Welcome to Five-Star Battery Data
+=================================
 
 Welcome! This MOOC teaches you how to turn raw battery data into structured, reusable, and linked digital assets — one star at a time.
 
@@ -27,6 +27,7 @@ Get started below:
 
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
 
    introduction/introduction
