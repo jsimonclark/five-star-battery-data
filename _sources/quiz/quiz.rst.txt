@@ -1,6 +1,8 @@
 Quiz
 ====
 
+.. include:: /_course_toc.rst
+
 Take the Five-Star Battery Data quiz below. It is delivered via Google Forms and will open in-place. Use the email you want to receive your result/certificate.
 
 .. raw:: html
@@ -17,4 +19,3 @@ Take the Five-Star Battery Data quiz below. It is delivered via Google Forms and
 
    If the form does not load (e.g., due to blockers), you can open it directly here:
    `Open the quiz in a new tab <https://docs.google.com/forms/d/e/1Naj85GWtMkeW9BG2bAmkUNTYnSXHFXHhA2pxY6eodkc/viewform>`__.
-
