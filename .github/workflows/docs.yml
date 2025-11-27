@@ -1,0 +1,35 @@
+name: docs
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r mooc/sphinx-requirements.txt
+
+      - name: Build Sphinx HTML
+        run: |
+          sphinx-build -b html mooc _build/html
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _build/html
+          # optional: keep_files: true   # if you need to keep existing assets
+          # optional: cname: your.domain.com
