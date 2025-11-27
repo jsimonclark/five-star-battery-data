@@ -32,11 +32,13 @@ autodoc_member_order = 'bysource'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.globalsubs',
-              'sphinx.ext.intersphinx',
+extensions = ['sphinx.ext.intersphinx',
+              'sphinx.ext.viewcode',
               'sphinx.ext.autosectionlabel',
               'sphinx_design',
-              'nbsphinx']
+              'nbsphinx',
+              'sphinx_copybutton',
+              ]
 
 autosectionlabel_prefix_document = True
 
@@ -55,9 +57,11 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
+smartquotes = False
+
 # General information about the project.
 project = 'BattInfo'
-copyright = '2021-2024'
+copyright = '2021-2023'
 author = 'Simon Clark'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -112,15 +116,43 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pydata_sphinx_theme'
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
+html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-  # "show_nav_level": 4
+    "primary_sidebar_end": [],  # No left sidebar
+    "show_nav_level": 2,  # No expanded left sections
+    "show_toc_level": 0,  # This disables the "On This Page" sidebar everywhere
+    'show_sidebar': False,
+    "navbar_center": ["navbar-nav"],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/emmo-repo/domain-electrochemistry",
+            "icon": "fab fa-github-square",
+        },
+        {
+            "name": "Ontology Homepage",
+            "url": "https://w3id.org/emmo/domain/electrochemistry",
+            "icon": "fas fa-globe",
+        },
+    ],
+    "search_bar_text": "Search the ontology...",
+    "show_prev_next": False,
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    "pygment_light_style": "friendly",
+    "pygment_dark_style": "lightbulb",
 }
+
+html_static_path = ["_static"]
+html_title = "Domain Electrochemistry Ontology"
+
+
+html_sidebars = {
+    "electrochemistry": ["search-field.html", "page-toc.html", "edit-this-page.html"],
+}
+
+html_css_files = ["custom.css"]
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -134,12 +166,12 @@ html_theme_options = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'img/battinfologo.jpg'
+html_logo = 'assets/img/battinfologo.jpg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = 'img/battinfologo.ico'
+html_favicon = 'assets/img/battinfologo.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -161,7 +193,14 @@ html_css_files = ['css/custom.css']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+#html_sidebars = {
+#    "**": [
+#        "search-field.html",
+#        "sidebar-nav-bs.html",        # Main sidebar navigation
+#        "sidebar-secondary-nav.html", # In-page TOC
+#    ]
+#}
+
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -298,5 +337,3 @@ add_module_names = False
 #                       '<autodoc>')
 
 # MatAttributeDocumenter.add_directive_header = _add_directive_header
-
-
