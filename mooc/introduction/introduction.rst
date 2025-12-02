@@ -47,6 +47,7 @@ Next steps
    ../star-3/star-3-notebook
    ../star-4/star-4-notebook
    ../star-5/star-5-notebook
+   ../applications/applications
+   ../discussion/discussion
    ../summary/summary
    ../quiz/quiz
-   ../discussion/discussion
