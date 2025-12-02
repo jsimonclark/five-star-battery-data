@@ -122,9 +122,11 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
+    # Keep the top bar simple and static.
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["theme-switcher", "navbar-search", "navbar-icon-links"],
+    "navbar_end": ["search-button", "navbar-icon-links"],
+    # Sidebar navigation: keep siblings visible and expanded to course depth.
     "navigation_depth": 4,
     "collapse_navigation": False,
     "show_nav_level": 2,
@@ -147,7 +149,6 @@ html_theme_options = {
     "pygment_light_style": "friendly",
     "pygment_dark_style": "lightbulb",
 }
-
 
 html_static_path = ["_static"]
 html_title = "★★★★★"
