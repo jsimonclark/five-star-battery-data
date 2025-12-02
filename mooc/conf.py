@@ -122,22 +122,32 @@ pygments_style = 'sphinx'
 html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    # Keep the top bar simple and static.
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
-    "navbar_end": ["search-button", "navbar-icon-links"],
-    # Sidebar navigation: keep siblings visible and expanded to course depth.
+    "navbar_end": ["theme-switcher", "navbar-search", "navbar-icon-links"],
     "navigation_depth": 4,
     "collapse_navigation": False,
     "show_nav_level": 2,
     "show_toc_level": 0,
-    "icon_links": [],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/jsimonclark/five-star-battery-data",
+            "icon": "fab fa-github-square",
+        },
+        {
+            "name": "Battery 2030+ Homepage",
+            "url": "https://battery2030.eu/",
+            "icon": "fas fa-globe",
+        },
+    ],
     "search_bar_text": "Search the course...",
     "show_prev_next": False,
     "footer_start": ["copyright"],
     "pygment_light_style": "friendly",
     "pygment_dark_style": "lightbulb",
 }
+
 
 html_static_path = ["_static"]
 html_title = "★★★★★"

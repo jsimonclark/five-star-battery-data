@@ -41,6 +41,7 @@ Get started below:
    :maxdepth: 1
 
    introduction/introduction
+   applications/applications
    discussion/discussion
    quiz/quiz
 
