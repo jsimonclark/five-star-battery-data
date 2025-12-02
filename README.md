@@ -12,8 +12,11 @@ The course follows the **Five-Star Battery Data** framework:
 2. ⭐⭐ Use structured data (e.g., tables, JSON)  
 3. ⭐⭐⭐ Use open formats (e.g., `.csv`, `.json`, `.parquet`)  
 4. ⭐⭐⭐⭐ Describe your data with ontologies  
-5. ⭐⭐⭐⭐⭐ Link your data to other relevant resources  
+5. ⭐⭐⭐⭐⭐ Link your data to other relevant resources
 
+## Get Started
+
+The MOOC is hosted on GitHub. [Click here](https://jsimonclark.github.io/five-star-battery-data/) to get started!
 
 ## License
 
