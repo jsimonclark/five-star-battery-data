@@ -3,6 +3,18 @@ Introduction
 
 Welcome to the Five-Star Battery Data MOOC. This short introduction explains what the course covers and how to navigate the modules.
 
+What you will learn
+-------------------
+- Why treating battery data as a reusable asset matters.
+- The five-star ladder: open access, structured data, open formats, semantic metadata, and linked data.
+- How each module is organized: video, notebook walkthrough, and exercises.
+
+How to use this MOOC
+--------------------
+- Start with the intro video, then move through stars 1 to 5 in order.
+- Each star page links to a rendered notebook with its own embedded video.
+- Use the quiz page at the end to check your understanding and receive a certificate if you pass.
+
 Watch the intro
 ---------------
 
@@ -21,21 +33,10 @@ Watch the intro
    If the video does not load, you can open it directly on YouTube:
    `Open the intro video <https://youtu.be/PA69m8wvdgs>`__.
 
-What you will learn
--------------------
-- Why treating battery data as a reusable asset matters.
-- The five-star ladder: open access, structured data, open formats, semantic metadata, and linked data.
-- How each module is organized: video, notebook walkthrough, and exercises.
-
-How to use this MOOC
---------------------
-- Start with the intro video, then move through stars 1 to 5 in order.
-- Each star page links to a rendered notebook and downloadable exercises.
-- Use the quiz page at the end to check your understanding and receive a certificate if you pass.
 
 Next steps
 ----------
-- Go back to the home page and begin with Star One: Open Access.
+- Get started with :doc:`Star One: Open Access <../star-1/star-1-notebook>`.
 
 .. toctree::
    :hidden:
