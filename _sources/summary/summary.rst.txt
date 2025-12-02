@@ -3,10 +3,10 @@ Summary and Next Steps
 
 Recap the five-star steps and pick your next action.
 
-- Open Access: publish with a permissive license in a trusted repository.
-- Structured Data: tidy, well-typed tables with provenance and units.
-- Open Formats: use CSV/JSON/Parquet and UTF-8 encoding.
-- Semantic Metadata: describe entities with shared identifiers and JSON-LD.
-- Linked Data: publish resolvable URIs and add outbound links.
+1. ⭐ Publish your data on the web with a permissive license  
+2. ⭐⭐ Use structured data (e.g., tables, JSON)  
+3. ⭐⭐⭐ Use open formats (e.g., `.csv`, `.json`, `.parquet`)  
+4. ⭐⭐⭐⭐ Describe your data with ontologies  
+5. ⭐⭐⭐⭐⭐ Link your data to other relevant resources  
 
 Ready to keep going? Revisit any star, complete the quiz, or apply this to your own dataset.
