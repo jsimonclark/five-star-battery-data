@@ -48,4 +48,11 @@ Get started below:
 
 Funding acknowledgement
 -----------------------
-This work has received funding from the European Union and the **BATTERY 2030+** initiative under grant agreement No. 101104022. The views and opinions expressed are those of the authors only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
+
+.. image:: _static/flag_of_europe.png
+   :alt: Flag of Europe
+   :width: 120px
+   :align: left
+
+This work has received funding from the European Union and the `Battery 2030+ <https://battery2030.eu/>`_ initiative under grant agreement No. 101104022. The views and opinions expressed are those of the authors only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
+
